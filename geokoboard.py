@@ -85,7 +85,20 @@ payload = {
   ]
 }
 
-payload = json.dumps(payload)
-result = appenddata(apikey,'saleorder', payload)
-print result
+# payload = json.dumps(payload)
+# result = appenddata(apikey,'saleorder', payload)
+# print result
 # 200 status will return if append data successful.
+
+def deletedata(api, id):
+    ''' this method will delete dataset '''
+    url = "https://api.geckoboard.com/datasets/"+id
+    headers = {
+        "Authorization": "Basic "+apikey
+    }
+    response = requests.request("DELETE", url, headers=headers)
+    return response.status_code
+
+# result = deletedata(apikey,'saleorder')
+# print result
+# 200 status will return if delete data successful.
