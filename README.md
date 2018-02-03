@@ -20,6 +20,15 @@ sudo pip install python-dotenv
 ## API Key in geockboard
 Geckoboard need authorize by API key. you can find api key in menu account in top right corner.
 
+## Setup configuration file
+copy .env.example file and rename it to .env file 
+```
+cp .env.example > .env
+```
+Then replace your api key
+```
+apikey=<you-api-key->
+```
 ## Documentation
 for more information. you can have a look.
 - [Geokoboard API reference](https://developer.geckoboard.com/api-reference/)
