@@ -37,11 +37,11 @@ payload = {
             "type": "datetime",
             "name": "Date"
         },
-        "string":{
+        "ordernumber":{
             "type": "string",
             "name": "Order Number"
         },
-        "amount":{
+        "total":{
             "type": "number",
             "name": "Total"
         }
